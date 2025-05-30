@@ -1,0 +1,20 @@
+<div class="container my-4">
+  <h4>{{ titulo }}</h4>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Materia</th>
+        <th>Docente</th>
+        <th>Hora</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let fila of materias">
+        <td>{{ fila.materia }}</td>
+        <td>{{ fila.docente }}</td>
+        <td>{{ fila.horario }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
